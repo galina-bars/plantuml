@@ -1,0 +1,47 @@
+@startmindmap
+
+*[#blue] Именование сущностей и атрибутов
+
+**[#Orange] Объект
+***[#green] Раздел
+**** Nrb<Название объекта>
+*****_ NrbSegment
+
+***[#green] Схема раздела
+**** Nrb<Название объекта>Section
+*****_ NrbSegmentSection
+
+***[#green] Страница редактирования раздела
+**** Nrb<Название объекта>Page
+*****_ NrbSegmentPage
+
+***[#green] Вкладка раздела
+**** Nrb<Название объекта><Название вкладки>Tab
+*****_ NrbSegmentFiltersTab
+
+***[#green] Группа полей раздела
+**** Nrb<Название объекта><Название группы>Group
+*****_ NrbSegmentGiftGroup
+
+***[#green] Деталь
+**** Объект детали
+***** Nrb<Название раздела><Название детали>
+******_ NrbSMSAudience
+
+**** Схема детали
+***** Nrb<Название объекта><Название детали>Detail
+******_ NrbSMSAudienceDetail
+
+**** Схема страницы детали
+***** Nrb<Название объекта детали>Page
+******_ NrbSMSAudiencePage
+
+**[#Orange] Справочник
+*** Nrb<Название объекта><Название справочника>
+****_ NrbSegmentType
+
+**[#Orange] Бизнес-процесс
+*** Nrb<Наименование процесса на английском>Process
+****_ NrbCreateCardInRightwayProcess
+
+@endmindmap
