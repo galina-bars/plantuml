@@ -1,0 +1,20 @@
+@startuml
+participant BPMSoft #pink
+participant RightWay
+database БД
+
+BPMSoft->BPMSoft: Пользователь нажимает кнопку "Добавить"
+BPMSoft->BPMSoft: Заполняет данные для создания карты
+BPMSoft->BPMSoft: Пользователь нажимает кнопку "Сохранить"
+BPMSoft->BPMSoft: Пользователь нажимает  \n"Запустить процесс" \n "Создать карту лояльности в Rightway"
+BPMSoft->RightWay:Создание карты Участника ПЛ
+activate RightWay #DarkSalmon
+RightWay->БД:Сохранение данных по карте
+RightWay->RightWay:Генерация номера карты
+RightWay->БД:Сохранение номера карты
+RightWay->BPMSoft:Номер карты Участника ПЛ
+deactivate RightWay
+BPMSoft->BPMSoft:Сохранение номера карты в БД BPMSoft
+BPMSoft->BPMSoft:В разделе "Карты" отображаеся номер карты Участника ПЛ
+
+@enduml
